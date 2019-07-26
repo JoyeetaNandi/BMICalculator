@@ -12,7 +12,7 @@ using System.Windows.Forms;
  * Description: COMP123 Assignment 4
  * Author: Joyeeta Nandi
  * Student ID: 300757798
- * Version: splash form
+ * Version: Completed BMI Calculator Assignment 4
  * Last modified: July 26, 2019
   */
 namespace BMICalculator

@@ -9,12 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace BMICalculator
-{
-    //enum Units
-    //{
-    //    Metric,
-    //    Imperial
-    //}
+{   
     public partial class BMICalculatorForm : Form
     {
         public TextBox ActiveTextBox { get; set; }
@@ -91,8 +86,7 @@ namespace BMICalculator
         }
         private void DisplayCondition()
         {
-            progressBar.Maximum = 4;
-            //double Result = 0;
+            progressBar.Maximum = 4;            
             if (displayResult < 18.5)
             {
                 messageMultiLineTextBox.Text = "underweight";
@@ -144,14 +138,12 @@ namespace BMICalculator
             MyHeightLabel.Text = "My Height(M)";
             MyWeightLabel.Text = "My Weight (Kg)";
 
-        }               
-        
+        }        
 
         private void CalculateBMI()
         {
             int weight;
-            int height;
-            //double result = 0;
+            int height;            
             displayResult = 0;
             int.TryParse(HeightTextBox.Text, out height);
             int.TryParse(WeightTextBox.Text, out weight);
@@ -187,7 +179,6 @@ namespace BMICalculator
             }
 
         }
-
         private void ActiveTextBox_click(object sender, EventArgs e)
         {
           
