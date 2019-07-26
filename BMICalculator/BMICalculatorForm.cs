@@ -161,13 +161,15 @@ namespace BMICalculator
                 if (ImperialRadioButton.Checked == true)
                 {
                     displayResult = weight * 703 / (height * height);
-                    ResultTextBox.Text = string.Format($"{displayResult:f2}").ToString();
+                   
+                    ResultTextBox.Text = displayResult.ToString();
 
                 }
                 else if (MetricRadioButton.Checked == true)
                 {
-                    displayResult = weight / Math.Pow(height / 100, 2);
-                    ResultTextBox.Text = string.Format($"{displayResult:f2}").ToString();
+                    displayResult = weight / (height*height);
+                    
+                    ResultTextBox.Text = displayResult.ToString();
                 }
 
                 

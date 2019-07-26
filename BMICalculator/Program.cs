@@ -8,8 +8,8 @@ using System.Windows.Forms;
  * Description: COMP123 Assignment 4
  * Author: Joyeeta Nandi
  * Student ID: 300757798
- * Version: 2.4 added splash form
- * Last modified: July 24, 2019
+ * Version: Fix calculation
+ * Last modified: July 26, 2019
   */
 namespace BMICalculator
 {
