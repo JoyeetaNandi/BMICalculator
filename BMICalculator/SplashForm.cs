@@ -16,5 +16,18 @@ namespace BMICalculator
         {
             InitializeComponent();
         }
+
+        private void SplashTimer_Tick(object sender, EventArgs e)
+        {
+            SplashTimer.Enabled = false;
+            Program.splashForm.Close();
+            this.Hide();
+            Program.bMICalculatorForm.Show();
+        }
+
+        private void SplashForm_Load(object sender, EventArgs e)
+        {
+            SplashTimer.Enabled = true;
+        }
     }
 }
